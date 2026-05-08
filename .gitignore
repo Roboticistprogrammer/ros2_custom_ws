@@ -1,0 +1,48 @@
+# Colcon / ROS2 build artifacts
+build/
+install/
+log/
+colcon-*
+
+# Build folders in subpackages
+**/build/
+**/install/
+**/log/
+
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.py[co]
+*.egg-info/
+*.egg
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tests / coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime*
+*.swp
+*~
+.DS_Store
+
+# Misc
+*.log
+*.tmp
+*.bak
+
+# Colcon local metadata
+.colcon/
+

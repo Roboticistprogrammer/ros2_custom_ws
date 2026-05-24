@@ -6,8 +6,7 @@ Description: PX4 supports Zenoh as an alternative mechanism (to DDS) for bridgin
 
 The following guide describes the architecture and various options for setting up the Zenoh client and router. In particular, it covers the options that are most important to PX4 users exploring Zenoh as an alternative communication layer for ROS 2.
 
-PUT IMAGE ./Docs/zeno-architecture.png
-
+![](Docs/zeno-architecture.png)
 ### GZ Setup
 > Clone PX4-Autopilot and build px4_sitl_zenoh
 

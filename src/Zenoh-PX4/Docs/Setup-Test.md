@@ -1,5 +1,15 @@
 # Test if Zenoh works
 
+## Installation
+```
+sudo apt update && sudo apt install ros-jazzy-rmw-zenoh-cpp
+```
+### Check if zenoh_ros package exists
+```bash
+dpkg -l | grep zenoh
+```
+
+
 ## Terminate ROS 2 daemon started with another RMW
 ```bash
 pkill -9 -f ros && ros2 daemon stop

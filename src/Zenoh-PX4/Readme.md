@@ -6,21 +6,31 @@ Description: PX4 supports Zenoh as an alternative mechanism (to DDS) for bridgin
 
 The following guide describes the architecture and various options for setting up the Zenoh client and router. In particular, it covers the options that are most important to PX4 users exploring Zenoh as an alternative communication layer for ROS 2.
 
-![](Docs/zeno-architecture.png)
+![Zenoh Architecture](Docs/zeno-architecture.png)
+
 ### GZ Setup
-> Clone PX4-Autopilot and build px4_sitl_zenoh
 
-Terminal 1
-git clone https:px4-autopilot...
+Clone PX4-Autopilot and build px4_sitl_zenoh:
+
+**Terminal 1:**
+```bash
+git clone https://github.com/PX4/PX4-Autopilot.git
 make px4_sitl_zenoh gz_x500
+```
 
-Terminal 2
+**Terminal 2:**
+```bash
 ros2 run rmw_zenoh_cpp rmw_zenohd
+```
 
-Terminal 3
-> Open Qground app and enable "ZENOH_ENABLE" parameter.
+**Terminal 3:**
 
-put image Errors/zenoh_enable.png
+[Zenoh Enable Parameter](Errors/zenoh_enable.png)
 
-Terminal 4
-> You can use following python scripts to test offboard control and monitor 
+**Terminal 4:**
+
+Use the following Python scripts to test offboard control and monitor telemetry: 
+```
+python3 zenoh_offboard.py 
+python3 zenoh_offboard_telemetry.py 
+```
